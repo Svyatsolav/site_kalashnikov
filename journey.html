@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествие по Ижевску - Начало</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="journey-page">
+    <div class="journey-container">
+        <nav class="journey-nav">
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                <span>На главную</span>
+            </a>
+            <div class="journey-title">
+                <h1>Путешествие по Ижевску</h1>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <!--<p class="step-counter">Шаг: <span id="current-step">1</span></p>-->
+            </div>
+            <div class="nav-placeholder"></div>
+        </nav>
+
+        <main class="journey-content">
+            <div class="location active" id="location-1">
+                <div class="location-header">
+                    <h2>Центральная площадь</h2>
+                    <p class="location-subtitle">Удмуртский государственный театр оперы и балета</p>
+                </div>
+                
+                <div class="location-image">
+                    <img src="tob.jpg" alt="Театр оперы и балета в Ижевске">
+                    <div class="image-caption">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Удмуртский государственный театр оперы и балета — главная культурная площадка города</span>
+                    </div>
+                </div>
+                
+                <div class="location-description">
+                    <p>Вы находитесь на центральной площади Ижевска рядом с Удмуртским государственным театром оперы и балета. Это здание было построено в 1984 году и является одним из символов города.</p>
+                    <p>Отсюда начинаются три интересных маршрута по городу. Куда вы хотите отправиться?</p>
+                </div>
+                
+                <div class="choices">
+                    <h3>Выберите направление:</h3>
+                    <div class="choice-buttons">
+                        <button class="choice-btn" data-direction="left" data-next="2">
+                            <i class="fas fa-arrow-left"></i>
+                            <span>Налево</span>
+                            <p>К Национальному музею и правительству Удмуртии</p>
+                        </button>
+                        <button class="choice-btn" data-direction="forward" data-next="3">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>Прямо</span>
+                            <p>К Свято-Михайловскому собору и музею Калашникова</p>
+                        </button>
+                        <button class="choice-btn" data-direction="right" data-next="4">
+                            <i class="fas fa-arrow-right"></i>
+                            <span>Направо</span>
+                            <p>К Монументу дружбы народов и Ижику</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="location" id="location-2">
+                <div class="location-header">
+                    <h2>Национальный музей Удмуртии</h2>
+                    <p class="location-subtitle">и Здание Правительства Удмуртской Республики</p>
+                </div>
+                
+                <div class="location-image">
+                    <img src="mn.png" alt="Национальный музей Удмуртии">
+                    <div class="image-caption">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Национальный музей Удмуртской Республики имени Кузебая Герда</span>
+                    </div>
+                </div>
+                
+                <div class="location-description">
+                    <p>Вы выбрали путь налево и оказались у Национального музея Удмуртской Республики имени Кузебая Герда. Это главный музейный комплекс региона, основанный в 1920 году.</p>
+                    <p>В экспозициях музея представлена богатая история, культура и природа Удмуртии. Здесь вы можете узнать о традициях удмуртского народа, увидеть уникальные археологические находки и этнографические коллекции.</p>
+                    <p>Рядом находится здание Правительства Удмуртской Республики — административный центр региона.</p>
+                </div>
+                
+                <div class="location-facts">
+                    <h3><i class="fas fa-star"></i> Интересные факты:</h3>
+                    <ul>
+                        <li>Музей хранит более 200 000 экспонатов</li>
+                        <li>Здание музея — памятник архитектуры федерального значения</li>
+                        <li>Во дворе музея установлен памятник Кузебаю Герду — удмуртскому поэту и просветителю</li>
+                    </ul>
+                </div>
+                
+                <div class="navigation-buttons">
+                    <button class="nav-btn back-to-start">
+                        <i class="fas fa-home"></i>
+                        <span>Вернуться на старт</span>
+                    </button>
+                    <button class="nav-btn continue-btn" data-next="1">
+                        <span>Выбрать другой маршрут</span>
+                        <i class="fas fa-redo"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="location" id="location-3">
+                <div class="location-header">
+                    <h2>Свято-Михайловский собор</h2>
+                    <p class="location-subtitle">и Музейно-выставочный комплекс им. М.Т. Калашникова</p>
+                </div>
+                
+                <div class="location-image">
+                    <img src="sm.png" alt="Свято-Михайловский собор">
+                    <div class="image-caption">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Свято-Михайловский собор — один из крупнейших православных храмов в Удмуртии</span>
+                    </div>
+                </div>
+                
+                <div class="location-description">
+                    <p>Вы пошли прямо и оказались у величественного Свято-Михайловского собора. Этот храм, построенный в 2007 году, является одним из символов возрождения православия в Удмуртии.</p>
+                    <p>Собор поражает своими размерами: высота главного купола составляет 67 метров, а колокольни — 70 метров. Храм может вместить до 3000 прихожан.</p>
+                    <p>Недалеко отсюда находится Музейно-выставочный комплекс стрелкового оружия имени М.Т. Калашникова, где вы можете узнать историю создания легендарного автомата АК-47 и увидеть уникальные экспонаты, связанные с оружейным производством Ижевска.</p>
+                </div>
+                
+                <div class="location-facts">
+                    <h3><i class="fas fa-star"></i> Интересные факты:</h3>
+                    <ul>
+                        <li>Собор построен на месте разрушенного в 1937 году Михайловского собора</li>
+                        <li>В музее Калашникова можно пострелять из различных видов оружия в тире</li>
+                        <li>Ижевск производит около 90% всего стрелкового оружия России</li>
+                    </ul>
+                </div>
+                
+                <div class="navigation-buttons">
+                    <button class="nav-btn back-to-start">
+                        <i class="fas fa-home"></i>
+                        <span>Вернуться на старт</span>
+                    </button>
+                    <button class="nav-btn continue-btn" data-next="1">
+                        <span>Выбрать другой маршрут</span>
+                        <i class="fas fa-redo"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="location" id="location-4">
+                <div class="location-header">
+                    <h2>Монумент Дружбы Народов</h2>
+                    <p class="location-subtitle">и Скульптура "Ижик"</p>
+                </div>
+                
+                <div class="location-image">
+                    <img src="mdn.png" alt="Монумент Дружбы Народов">
+                    <div class="image-caption">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Монумент Дружбы Народов символизирует единство русского и удмуртского народов</span>
+                    </div>
+                </div>
+                
+                <div class="location-description">
+                    <p>Вы выбрали путь направо и оказались у Монумента Дружбы Народов. Этот 46-метровый памятник был открыт в 1972 году к 400-летию добровольного вхождения Удмуртии в состав Российского государства.</p>
+                    <p>Две стелы символизируют русский и удмуртский народы, а соединяющие их рельефы изображают этапы совместной истории. Это одно из самых узнаваемых мест Ижевска.</p>
+                    <p>Недалеко от монумента находится знаменитый "Ижик" — скульптура мальчика в кафтане и с кокошником, ставшая неофициальным символом города. По легенде, если потереть нос Ижика, это принесет удачу.</p>
+                </div>
+                
+                <div class="location-facts">
+                    <h3><i class="fas fa-star"></i> Интересные факты:</h3>
+                    <ul>
+                        <li>Монумент весит более 300 тонн</li>
+                        <li>"Ижик" — это уменьшительное от "Иж", названия реки, на которой стоит город</li>
+                        <li>В 2010 году "Ижик" был похищен, но позже восстановлен и возвращен на место</li>
+                    </ul>
+                </div>
+                
+                <div class="navigation-buttons">
+                    <button class="nav-btn back-to-start">
+                        <i class="fas fa-home"></i>
+                        <span>Вернуться на старт</span>
+                    </button>
+                    <button class="nav-btn continue-btn" data-next="1">
+                        <span>Выбрать другой маршрут</span>
+                        <i class="fas fa-redo"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="journey-footer">
+            <p>Ижевск — город с богатой историей и культурой!</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
