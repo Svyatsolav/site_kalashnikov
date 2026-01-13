@@ -15,53 +15,254 @@
                 <span>Ижевск Тур</span>
             </div>
             <div class="nav-links">
-                <a href="#" class="nav-link">О городе</a>
-                <a href="#" class="nav-link">Маршруты</a>
-                <a href="#" class="nav-link">Галерея</a>
-                <a href="#" class="nav-link">Контакты</a>
+                <a href="#about" class="nav-link about-link">О городе</a>
+                <a href="#routes" class="nav-link routes-link">Маршруты</a>
+                <a href="#gallery" class="nav-link gallery-link">Галерея</a>
+                <a href="#contacts" class="nav-link contacts-link">Контакты</a>
             </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
+        
+        <div class="mobile-menu">
+            <a href="#about" class="mobile-nav-link about-link">О городе</a>
+            <a href="#routes" class="mobile-nav-link routes-link">Маршруты</a>
+            <a href="#gallery" class="mobile-nav-link gallery-link">Галерея</a>
+            <a href="#contacts" class="mobile-nav-link contacts-link">Контакты</a>
+            <a href="journey.html" class="mobile-nav-link start-link">Начать путешествие</a>
+        </div>
 
-        <main class="hero">
+        <main class="hero" id="home">
             <div class="hero-content">
                 <h1 class="hero-title">Путешествие по Ижевску</h1>
-                <p class="hero-subtitle">Ижевск - столица Удмуртии. Давайте скорее отправимся в удивительное путешествие по этому городу!</p>
+                <p class="hero-subtitle">Откройте для себя столицу Удмуртии - город оружейников, мотоциклов и богатой культуры</p>
                 <a href="journey.html" class="start-button">
                     <span>Начать путешествие</span>
                     <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
             
-            <div class="scroll-indicator">
-                <span>Начните приключение</span>
+            <div class="scroll-indicator" data-target="#about">
+                <span>Узнать больше</span>
                 <i class="fas fa-chevron-down"></i>
             </div>
         </main>
         
-        <section class="info-section">
+        <section class="info-section" id="about">
             <h2>Ижевск - город на Иже</h2>
-            <div class="info-grid">
-                <div class="info-card">
-                    <i class="fas fa-industry"></i>
-                    <h3>Город оружейников</h3>
-                    <p>Ижевск известен как "оружейная столица России", где производится знаменитый автомат Калашникова.</p>
+            <div class="section-content">
+                <div class="about-text">
+                    <p>Ижевск — столица Удмуртской Республики, расположенная на реке Иж. Город был основан в 1760 году как железоделательный завод и за свою историю превратился в крупный промышленный и культурный центр Приуралья.</p>
+                    <p>Ижевск известен как «оружейная столица России» — здесь производится знаменитый автомат Калашникова, а также другое стрелковое оружие. Город также славится мотоциклами «Иж», которые выпускались на местном заводе.</p>
+                    <p>Современный Ижевск — это гармоничное сочетание промышленного потенциала, богатой истории и уникальной культуры. Город сохранил архитектурные памятники XVIII-XIX веков и активно развивает современную инфраструктуру.</p>
                 </div>
-                <div class="info-card">
-                    <i class="fas fa-landmark"></i>
-                    <h3>Богатая история</h3>
-                    <p>Основан в 1760 году как железоделательный завод. Город с уникальной историей и архитектурой.</p>
-                </div>
-                <div class="info-card">
-                    <i class="fas fa-users"></i>
-                    <h3>Культурная мозаика</h3>
-                    <p>Многонациональный город, где мирно сосуществуют русские, удмурты, татары и другие народы.</p>
+                
+                <div class="about-facts">
+                    <div class="fact-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Основан</h3>
+                        <p>10 апреля 1760 года</p>
+                    </div>
+                    <div class="fact-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Население</h3>
+                        <p>более 650 000 человек</p>
+                    </div>
+                    <div class="fact-card">
+                        <i class="fas fa-industry"></i>
+                        <h3>Промышленность</h3>
+                        <p>оружейная, машиностроительная, металлургическая</p>
+                    </div>
+                    <div class="fact-card">
+                        <i class="fas fa-landmark"></i>
+                        <h3>Достопримечательности</h3>
+                        <p>более 200 памятников истории и культуры</p>
+                    </div>
                 </div>
             </div>
         </section>
         
+        <section class="routes-section" id="routes">
+            <h2>Маршруты по Ижевску</h2>
+            <p class="section-subtitle">Выберите один из трех интересных маршрутов для знакомства с городом</p>
+            
+            <div class="routes-grid">
+                <div class="route-card left-route">
+                    <div class="route-icon">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <h3>Маршрут налево</h3>
+                    <div class="route-stops">
+                        <div class="stop">
+                            <span class="stop-number">1</span>
+                            <span class="stop-name">Здание Правительства Удмуртии</span>
+                        </div>
+                        <div class="stop">
+                            <span class="stop-number">2</span>
+                            <span class="stop-name">Национальный музей Удмуртии</span>
+                        </div>
+                        <div class="stop">
+                            <span class="stop-number">3</span>
+                            <span class="stop-name">Сквер Победы</span>
+                        </div>
+                    </div>
+                    <p class="route-desc">Историко-административный маршрут, знакомящий с политическим и культурным центром города.</p>
+                    <a href="journey.html" class="route-select-btn" data-route="left">
+                        <span>Выбрать этот маршрут</span>
+                        <i class="fas fa-play"></i>
+                    </a>
+                </div>
+                
+                <div class="route-card forward-route">
+                    <div class="route-icon">
+                        <i class="fas fa-arrow-up"></i>
+                    </div>
+                    <h3>Маршрут прямо</h3>
+                    <div class="route-stops">
+                        <div class="stop">
+                            <span class="stop-number">1</span>
+                            <span class="stop-name">Музей Калашникова</span>
+                        </div>
+                        <div class="stop">
+                            <span class="stop-number">2</span>
+                            <span class="stop-name">Свято-Михайловский собор</span>
+                        </div>
+                        <div class="stop">
+                            <span class="stop-number">3</span>
+                            <span class="stop-name">Мотомузей</span>
+                        </div>
+                    </div>
+                    <p class="route-desc">Техническо-культурный маршрут, посвященный оружейному делу, православию и мотоциклетной промышленности.</p>
+                    <a href="journey.html" class="route-select-btn" data-route="forward">
+                        <span>Выбрать этот маршрут</span>
+                        <i class="fas fa-play"></i>
+                    </a>
+                </div>
+                
+                <div class="route-card right-route">
+                    <div class="route-icon">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <h3>Маршрут направо</h3>
+                    <div class="route-stops">
+                        <div class="stop">
+                            <span class="stop-number">1</span>
+                            <span class="stop-name">Скульптура "Ижик"</span>
+                        </div>
+                        <div class="stop">
+                            <span class="stop-number">2</span>
+                            <span class="stop-name">Монумент Дружбы Народов</span>
+                        </div>
+                        <div class="stop">
+                            <span class="stop-number">3</span>
+                            <span class="stop-name">Смотровая площадка</span>
+                        </div>
+                    </div>
+                    <p class="route-desc">Символическо-панорамный маршрут, показывающий символы города и красивые виды.</p>
+                    <a href="journey.html" class="route-select-btn" data-route="right">
+                        <span>Выбрать этот маршрут</span>
+                        <i class="fas fa-play"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="gallery-section" id="gallery">
+            <h2>Галерея Ижевска</h2>
+            <p class="section-subtitle">Красивые виды и достопримечательности города</p>
+            
+            <div class="gallery-container">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="tob.jpg" alt="Театр оперы и балета">
+                        <div class="gallery-caption">
+                            <h4>Театр оперы и балета</h4>
+                            <p>Главная культурная площадка города</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="mm.jpg" alt="Музей Калашникова">
+                        <div class="gallery-caption">
+                            <h4>Музей Калашникова</h4>
+                            <p>Музей стрелкового оружия</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="ss.jpg" alt="Свято-Михайловский собор">
+                        <div class="gallery-caption">
+                            <h4>Свято-Михайловский собор</h4>
+                            <p>Кафедральный собор Ижевской епархии</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="dn.png" alt="Монумент Дружбы Народов">
+                        <div class="gallery-caption">
+                            <h4>Монумент Дружбы Народов</h4>
+                            <p>Символ единства народов</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="mk.jpg" alt="Национальный музей">
+                        <div class="gallery-caption">
+                            <h4>Национальный музей</h4>
+                            <p>Музей истории и культуры Удмуртии</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="mu.jfif" alt="Мотомузей">
+                        <div class="gallery-caption">
+                            <h4>Мотомузей</h4>
+                            <p>Музей мотоциклов "Иж"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contacts-section" id="contacts">
+            <h2>Контакты</h2>
+            <p class="section-subtitle">Вы можете предложить свои идеи для улучшения сайта</p>
+                
+                <div class="contact-form">
+                    <h3>Оставьте сообщение</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Ваш email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Отправить сообщение</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
         <footer>
-            <p>Ижевск — город с богатой историей и культурой!</p>
+            <p class="copyright">Ижевск — город с богатой историей и культурой!</p>
         </footer>
+    </div>
+    
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-caption">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
     </div>
     
     <script src="script.js"></script>
